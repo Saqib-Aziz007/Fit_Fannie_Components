@@ -1,8 +1,8 @@
 import React from 'react';
 import {Alert, FlatList} from 'react-native';
 import AppButton from './app/components/AppButton';
-import VideoCard from './app/components/AppCard';
 import AppIconButton from './app/components/AppIconButton';
+import AppVideoCard from './app/components/AppVideoCard';
 import {colors, videos} from './app/components/constants/constants';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <FlatList
       data={videos}
       keyExtractor={video => video.id}
-      renderItem={video => <VideoCard video={video} />}
+      renderItem={video => <AppVideoCard video={video} />}
     />
     // <>
     //   <AppIconButton icon={'google'} size={25} />

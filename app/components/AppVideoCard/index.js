@@ -4,7 +4,7 @@ import {colors} from '../constants/constants';
 import {styles} from './styles';
 import AppIconButton from '../AppIconButton';
 
-const VideoCard = ({video, onPress}) => {
+const AppVideoCard = ({video, onPress}) => {
   const video1 = video?.item;
   return (
     <View style={styles.mainContainer}>
@@ -43,4 +43,4 @@ const VideoCard = ({video, onPress}) => {
   );
 };
 
-export default VideoCard;
+export default AppVideoCard;
