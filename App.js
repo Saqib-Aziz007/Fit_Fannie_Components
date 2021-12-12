@@ -2,16 +2,17 @@ import React from 'react';
 import {Alert, FlatList} from 'react-native';
 import AppButton from './app/components/AppButton';
 import AppIconButton from './app/components/AppIconButton';
+import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
 import {colors, videos} from './app/components/constants/constants';
 
 const App = () => {
   return (
-    <FlatList
-      data={videos}
-      keyExtractor={video => video.id}
-      renderItem={video => <AppVideoCard video={video} />}
-    />
+    // <FlatList
+    //   data={videos}
+    //   keyExtractor={video => video.id}
+    //   renderItem={video => <AppVideoCard video={video} />}
+    // />
     // <>
     //   <AppIconButton icon={'google'} size={25} />
     //   <AppIconButton icon={'google'} size={50} color={colors.secondary2} />
@@ -22,6 +23,7 @@ const App = () => {
     //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
     //   />
     // </>
+    <AppSocialButton icon={'facebook'} />
   );
 };
 
