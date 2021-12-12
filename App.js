@@ -23,7 +23,11 @@ const App = () => {
     //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
     //   />
     // </>
-    <AppSocialButton icon={'facebook'} />
+    <>
+      <AppSocialButton icon={'google'} size={25} />
+      <AppSocialButton icon={'google'} size={50} color="black" />
+      <AppSocialButton title={'Sign Up With Google'} size={75} />
+    </>
   );
 };
 

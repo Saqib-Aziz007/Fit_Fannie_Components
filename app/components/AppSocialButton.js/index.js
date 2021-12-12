@@ -17,7 +17,12 @@ const AppSocialButton = ({
     <TouchableOpacity onPress={onPress}>
       <View
         style={[
-          {...styles.socialbutton, height: size, width: size * 3},
+          {
+            ...styles.socialbutton,
+            borderRadius: size / 2,
+            height: size,
+            width: size * 3,
+          },
           style,
         ]}>
         {icon && (
