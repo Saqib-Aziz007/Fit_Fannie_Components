@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, FlatList, View} from 'react-native';
+import {Alert, FlatList, Text, View} from 'react-native';
 import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
@@ -13,31 +13,45 @@ const App = () => {
         padding: 30,
         flexDirection: 'column',
         height: '100%',
-        justifyContent: 'space-evenly',
         alignItems: 'center',
       }}>
-      <AppIconButton
+      <Text>defult</Text>
+      <AppSocialButton
+        // title={'Google'}
         icon={'google'}
-        size={25}
-        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
+        //primaryColor="dodgerblue"
       />
-      <AppIconButton
+      <Text>primaryColor = dodgerblue</Text>
+      <AppSocialButton
+        title={'facebook'}
+        icon={'facebook'}
+        primaryColor="dodgerblue"
+      />
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <AppSocialButton title={'Google'} icon={'google'} size={70} />
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <AppSocialButton
+        title={'Google'}
         icon={'google'}
-        size={50}
-        color="red"
-        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
+        iconColor="red"
+        primaryColor="dodgerblue"
+
+        //primaryColor="dodgerblue"
       />
-      <AppIconButton
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <Text>titleStyle=color:black</Text>
+      <Text>style = borderColor:orange</Text>
+      <AppSocialButton
+        title={'Google'}
         icon={'google'}
-        size={70}
-        iconColor="black"
-        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
-      />
-      <AppIconButton
-        icon={'arrow-left'}
-        size={85}
-        color="black"
-        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
+        iconColor="red"
+        primaryColor="dodgerblue"
+        titleStyle={{color: 'black'}}
+        style={{borderColor: 'orange'}}
+        //primaryColor="dodgerblue"
       />
     </View>
   );
