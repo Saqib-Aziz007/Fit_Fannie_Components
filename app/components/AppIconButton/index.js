@@ -8,8 +8,8 @@ const AppIconButton = ({
   icon,
   onPress,
   size = 50,
-  color = colors.white,
-  backgroundColor = colors.secondary1,
+  iconColor = colors.white,
+  color = colors.secondary1,
   style,
 }) => {
   return (
@@ -20,10 +20,10 @@ const AppIconButton = ({
           height: size,
           width: size,
           borderRadius: size / 2,
-          backgroundColor: backgroundColor,
+          backgroundColor: color,
           ...style,
         }}>
-        <Icon name={icon} size={size / 2} color={color} />
+        <Icon name={icon} size={size / 2} color={iconColor} />
       </View>
     </TouchableOpacity>
   );

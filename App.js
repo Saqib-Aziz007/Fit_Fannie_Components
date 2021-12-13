@@ -8,61 +8,36 @@ import {colors, videos} from './app/components/constants/constants';
 
 const App = () => {
   return (
-    // <FlatList
-    //   data={videos}
-    //   keyExtractor={video => video.id}
-    //   renderItem={video => <AppVideoCard video={video} />}
-    // />
-    // <>
-    //   <AppIconButton icon={'google'} size={25} />
-    //   <AppIconButton icon={'google'} size={50} color={colors.secondary2} />
-    //   <AppIconButton
-    //     icon={'google'}
-    //     size={75}
-    //     backgroundColor={colors.secondary2}
-    //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
-    //   />
-    // </>
-    <View style={{padding: 30}}>
-      {/* <AppSocialButton icon={'google'} size={25} />
-      <AppSocialButton icon={'google'} size={50} color="black" />
-      <AppSocialButton title={'Sign Up With Google'} size={75} /> */}
-      <Button
-        title={'primary'}
-        buttonType="primary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'Primary Button Pressed!')}
+    <View
+      style={{
+        padding: 30,
+        flexDirection: 'column',
+        height: '100%',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+      }}>
+      <AppIconButton
+        icon={'google'}
+        size={25}
+        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
       />
-      <Button
-        title={'primary-isOutlined'}
-        buttonType="primary"
-        isOutlined={true}
-        onPress={() =>
-          Alert.alert('Alert!', 'primary-outlined Button Pressed!')
-        }
+      <AppIconButton
+        icon={'google'}
+        size={50}
+        color="red"
+        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
       />
-      <Button
-        title={'secondary-enabled'}
-        buttonType="secondary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'secondary Button Pressed!')}
-        disabled={false}
+      <AppIconButton
+        icon={'google'}
+        size={70}
+        iconColor="black"
+        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
       />
-      <Button
-        title={'secondary-disabled'}
-        buttonType="secondary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'secondary Button Pressed!')}
-        disabled={true}
-      />
-      <Button
-        title={'secondary-isOutlined'}
-        buttonType="secondary"
-        isOutlined={true}
-        onPress={() =>
-          Alert.alert('Alert!', 'secondary-Outlined Button Pressed!')
-        }
-        style={{width: '50%'}}
+      <AppIconButton
+        icon={'arrow-left'}
+        size={85}
+        color="black"
+        onPress={() => Alert.alert('Alert!', 'Button Pressed!')}
       />
     </View>
   );
