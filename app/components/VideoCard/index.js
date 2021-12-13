@@ -8,8 +8,8 @@ const AppVideoCard = ({video, onPress}) => {
   const video1 = video?.item;
   return (
     <View style={styles.mainContainer}>
-      <View style={styles.rowContainer}>
-        <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={onPress}>
+        <View style={styles.rowContainer}>
           <View style={styles.imageContainer}>
             <ImageBackground
               source={video1?.video?.thumbnail}
@@ -18,27 +18,29 @@ const AppVideoCard = ({video, onPress}) => {
                 <AppIconButton
                   icon={'lock'}
                   size={50}
-                  backgroundColor={colors.secondary2}
+                  color={colors.secondary2}
+                  onPress={onPress}
                 />
               ) : (
                 <AppIconButton
                   icon={'play'}
-                  backgroundColor={colors.secondary2}
+                  color={colors.secondary2}
+                  onPress={onPress}
                 />
               )}
             </ImageBackground>
           </View>
-        </TouchableOpacity>
-        <View style={styles.detailsContainer}>
-          <Text style={styles.heading}>{video1?.step}</Text>
-          <Text numberOfLines={1} style={styles.title}>
-            {video1?.title}
-          </Text>
-          <Text numberOfLines={2} style={styles.subTitle}>
-            {video1.subtitle}
-          </Text>
+          <View style={styles.detailsContainer}>
+            <Text style={styles.heading}>{video1?.step}</Text>
+            <Text numberOfLines={1} style={styles.title}>
+              {video1?.title}
+            </Text>
+            <Text numberOfLines={2} style={styles.subTitle}>
+              {video1?.subtitle}
+            </Text>
+          </View>
         </View>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };
