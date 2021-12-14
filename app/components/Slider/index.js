@@ -12,26 +12,25 @@ const AppSlider = ({
   trackstyle = styles.trackstyle,
   minimumTrackTintColor = colors.backbuttonColor,
   maximumTrackTintColor,
+  onValueChange,
+  renderText,
 }) => {
-  const [value, setValue] = useState(18);
   return (
     <View
       style={{
         padding: 30,
       }}>
       <Slider
-        value={Value}
+        value={minimumValue}
         minimumValue={minimumValue}
         maximumValue={maximumValue}
         minimumTrackTintColor={minimumTrackTintColor}
         maximumTrackTintColor={maximumTrackTintColor}
-        onValueChange={value => setValue(Math.floor(value))}
+        onValueChange={onValueChange}
         trackStyle={trackstyle}
         thumbStyle={thumbStyle}
       />
-      <View style={styles.textContainer}>
-        <Text style={styles.thumbText}>{value}</Text>
-      </View>
+      <View style={styles.textContainer}>{renderText}</View>
     </View>
   );
 };
