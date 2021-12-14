@@ -5,21 +5,10 @@ import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/VideoCard';
 import Button from './app/components/Button';
 import {colors, videos} from './app/components/constants/constants';
+import AppSlider from './app/components/Slider';
 
 const App = () => {
-  return (
-    <FlatList
-      data={videos}
-      keyExtractor={video => video.id}
-      renderItem={video => (
-        <AppVideoCard
-          video={video}
-          onPress={() => Alert.alert('Alert!', JSON.stringify(video))}
-        />
-      )}
-    />
-    // <AppVideoCard video={videos[0]} />
-  );
+  return <AppSlider />;
 };
 
 export default App;
