@@ -5,7 +5,6 @@ import {colors} from '../constants/constants';
 import {styles} from './styles';
 
 const AppSlider = ({
-  Value = 18,
   minimumValue = 18,
   maximumValue = 100,
   thumbStyle = styles.trackThumbComponent,
@@ -13,7 +12,7 @@ const AppSlider = ({
   minimumTrackTintColor = colors.backbuttonColor,
   maximumTrackTintColor,
   onValueChange,
-  renderText,
+  renderValue,
 }) => {
   return (
     <View
@@ -30,7 +29,9 @@ const AppSlider = ({
         trackStyle={trackstyle}
         thumbStyle={thumbStyle}
       />
-      <View style={styles.textContainer}>{renderText}</View>
+      <View style={styles.textContainer}>
+        <Text style={styles.thumbText}>{Math.floor(renderValue)}</Text>
+      </View>
     </View>
   );
 };
