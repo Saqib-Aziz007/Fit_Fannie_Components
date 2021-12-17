@@ -1,17 +1,35 @@
 import React from 'react';
-import {Alert, FlatList} from 'react-native';
+import {Alert, FlatList, View} from 'react-native';
 import AppButton from './app/components/AppButton';
 import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
-import {colors, videos} from './app/components/constants/constants';
+import {colors, Questions, videos} from './app/components/constants/constants';
 import AppCustomButton from './app/components/CustomButton';
+import QuestionCard from './app/components/QuestionCard';
 
 const App = () => {
   return (
-    <AppCustomButton
-      onPress={value => console.warn('Button pressed!', value)}
+    // <View style={{height: '70%', width: '98%'}}>
+    <FlatList
+      data={Questions}
+      keyExtractor={value => value.id}
+      horizontal={true}
+      // style={{width: '100%', height: '60%'}}
+      renderItem={question => (
+        // console.log(question),
+        <QuestionCard
+          question={question.item}
+          totalQuestion={Questions.length}
+          onPress={value => console.warn('Alert!', value)}
+        />
+      )}
     />
+    // </View>
+    // <QuestionCard />
+    // <AppCustomButton
+    //   onPress={value => console.warn('Button pressed!', value)}
+    // />
     // <>s
     //  <FlatList
     //   data={videos}
