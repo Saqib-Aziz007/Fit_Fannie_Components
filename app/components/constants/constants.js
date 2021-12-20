@@ -12,6 +12,7 @@ export const images = {
   facebook: require('../../../assets/icons/facebook.png'),
   google: require('../../../assets/icons/google.png'),
   twitter: require('../../../assets/icons/twitter.png'),
+  login1background: require('../../../assets/images/login1background.png'),
 };
 
 export const fontColor = {

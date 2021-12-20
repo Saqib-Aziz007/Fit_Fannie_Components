@@ -5,6 +5,7 @@ import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
 import {colors, videos} from './app/components/constants/constants';
+import Login1 from './app/screens/Login1';
 
 const App = () => {
   return (
@@ -23,11 +24,12 @@ const App = () => {
     //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
     //   />
     // </>
-    <>
-      <AppSocialButton icon={'google'} size={25} />
-      <AppSocialButton icon={'google'} size={50} color="black" />
-      <AppSocialButton title={'Sign Up With Google'} size={75} />
-    </>
+    // <>
+    //   <AppSocialButton icon={'google'} size={25} />
+    //   <AppSocialButton icon={'google'} size={50} color="black" />
+    //   <AppSocialButton title={'Sign Up With Google'} size={75} />
+    // </>
+    <Login1 />
   );
 };
 
