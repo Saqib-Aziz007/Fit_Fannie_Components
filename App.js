@@ -5,6 +5,7 @@ import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
 import {colors, videos} from './app/components/constants/constants';
+import DividerContainer from './app/components/Divider';
 import Login1 from './app/screens/Login1';
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
     //   <AppSocialButton icon={'google'} size={50} color="black" />
     //   <AppSocialButton title={'Sign Up With Google'} size={75} />
     // </>
-    <Login1 />
+    <DividerContainer text={'Join Us'} />
   );
 };
 
