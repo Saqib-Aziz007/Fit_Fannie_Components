@@ -4,6 +4,7 @@ import {Image, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import {colors, images} from '../../components/constants/constants';
 // import {APP_BLACK, APP_LIGHT2} from '../../constants/constants';
 import {styles} from './styles';
+import LineGraph from '../../components/LineGraph';
 
 const data = [
   {date: 11, excercise_hours: 2},
@@ -27,7 +28,9 @@ const Home = () => {
             />
             <Text style={styles.profileName}>Sarah</Text>
           </View>
-          <View>{/* <LineGraph data={data} showAxis={false} /> */}</View>
+          <View>
+            <LineGraph data={data} showAxis={false} />
+          </View>
           <View style={styles.excerciseContainer}>
             <Text style={styles.excerciselabel}>Exerciese Time</Text>
             <Text style={styles.excerciseDateStyle}>
