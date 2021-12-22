@@ -1,11 +1,11 @@
 export const colors = {
-  white: '#FFFFFF',
-  primarylight1: '#E5FFFB',
-  primarydark2: '#D0F4ED',
-  primarydark3: '#99D5CA',
-  secondary1: '#104F55',
-  secondary2: '#F16889',
-  backbuttonColor: '#9CD9CE',
+  APP_COLOR_WHITE: '#FFFFFF',
+  APP_COLOR_LIGHT1: '#E5FFFB',
+  APP_COLOR_LIGHT2: '#D0F4ED',
+  APP_COLOR_LIGHT3: '#99D5CA',
+  APP_SECONDARY_COLOR: '#104F55',
+  APP_PRIMARY_COLOR: '#F16889',
+  APP_COLOR_BLACK: '#000000',
 };
 
 export const images = {

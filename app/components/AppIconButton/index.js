@@ -8,8 +8,8 @@ const AppIconButton = ({
   icon,
   onPress,
   size = 50,
-  color = colors.white,
-  backgroundColor = colors.secondary1,
+  color = colors.APP_COLOR_WHITE,
+  backgroundColor = colors.APP_SECONDARY_COLOR,
   style,
 }) => {
   return (

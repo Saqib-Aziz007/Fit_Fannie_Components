@@ -18,12 +18,12 @@ const AppVideoCard = ({video, onPress}) => {
                 <AppIconButton
                   icon={'lock'}
                   size={50}
-                  backgroundColor={colors.secondary2}
+                  backgroundColor={colors.APP_PRIMARY_COLOR}
                 />
               ) : (
                 <AppIconButton
                   icon={'play'}
-                  backgroundColor={colors.secondary2}
+                  backgroundColor={colors.APP_PRIMARY_COLOR}
                 />
               )}
             </ImageBackground>
