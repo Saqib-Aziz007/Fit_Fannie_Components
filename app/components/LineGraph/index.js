@@ -1,10 +1,9 @@
-import {VictoryLine, VictoryChart, VictoryTheme} from 'victory-native';
-
 import React from 'react';
 import {Dimensions, Text, View} from 'react-native';
 import {styles} from './styles';
 import {PRIMARY_COLOR} from '../../constants/constants';
 import {colors} from '../constants/constants';
+import {VictoryChart, VictoryLine, VictoryTheme} from 'victory-native';
 
 const {width, height} = Dimensions.get('screen');
 
