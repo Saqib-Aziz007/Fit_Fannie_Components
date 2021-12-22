@@ -30,7 +30,11 @@ const App = () => {
     //   <AppSocialButton icon={'google'} size={50} color="black" />
     //   <AppSocialButton title={'Sign Up With Google'} size={75} />
     // </>
-    <DividerContainer text={'Join Us'} />
+    <>
+      <DividerContainer text={'Join Us'} />
+      <DividerContainer text={'or'} />
+      <DividerContainer text={'Contact Us'} />
+    </>
   );
 };
 
