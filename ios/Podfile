@@ -12,7 +12,6 @@ target 'Five_n_Fit_Components' do
     :hermes_enabled => false
   )
 
-  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
   target 'Five_n_Fit_ComponentsTests' do
     inherit! :complete
