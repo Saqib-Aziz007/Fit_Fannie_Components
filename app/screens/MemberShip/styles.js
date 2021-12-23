@@ -4,12 +4,13 @@ import {colors} from '../../components/constants/constants';
 export const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
-    backgroundColor: colors.APP_COLOR_WHITE,
+    backgroundColor: colors.APP_COLOR_LIGHT2,
   },
   container: {
     flex: 1,
-    backgroundColor: colors.APP_COLOR_LIGHT2,
-    padding: 20,
+    // backgroundColor: colors.APP_COLOR_LIGHT2,
+    paddingTop: 50,
+    paddingHorizontal: 20,
   },
   titleContainer: {
     justifyContent: 'center',

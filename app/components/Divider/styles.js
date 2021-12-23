@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
   },
   dividertext: {
     color: colors.primaryTextColor,
-    fontSize: 15,
+    fontSize: 16,
+    fontWeight: '400',
   },
 });

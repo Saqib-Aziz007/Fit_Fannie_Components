@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
 import {styles} from './styles';
 
-const DividerContainer = ({text, lineStyle, textStyle, containerStyle}) => {
+const Divider = ({text, lineStyle, textStyle, containerStyle}) => {
   return (
     <SafeAreaView>
       <View style={[styles.dividercontainer, containerStyle]}>
@@ -14,4 +14,4 @@ const DividerContainer = ({text, lineStyle, textStyle, containerStyle}) => {
   );
 };
 
-export default DividerContainer;
+export default Divider;
