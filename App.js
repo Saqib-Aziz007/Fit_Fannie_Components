@@ -10,10 +10,12 @@ import Login1 from './app/screens/Login1';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './app/navigation/TabNavigator';
 import MembershipScreen from './app/screens/MemberShip';
+import AppInput from './app/components/AppInput';
 
 const App = () => {
   return (
-    <MembershipScreen />
+    // <MembershipScreen />
+    <AppInput label={'Email'} />
 
     // <>
     //   <FlatList
