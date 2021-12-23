@@ -20,7 +20,7 @@ const TabNavigator = () => {
       barStyle={{backgroundColor: colors.APP_COLOR_WHITE}}>
       <Tab.Screen
         name="Home"
-        component={MembershipScreen}
+        component={Home}
         options={{
           tabBarIcon: ({color = colors.APP_PRIMARY_COLOR}) => (
             <MaterialCommunityIcon name="home" color={color} size={20} />
