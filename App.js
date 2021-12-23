@@ -15,7 +15,6 @@ import AppInput from './app/components/AppInput';
 const App = () => {
   return (
     // <MembershipScreen />
-    <AppInput label={'Email'} />
 
     // <>
     //   <FlatList
