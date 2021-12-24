@@ -1,12 +1,9 @@
 import React from 'react';
-import {Alert, SafeAreaView, ScrollView, Text, View} from 'react-native';
-import AppButton from '../../components/AppButton';
-import AppIconButton from '../../components/AppIconButton';
-import AppSocialButton from '../../components/AppSocialButton.js';
-import AppText from '../../components/AppText';
+import {Alert, ScrollView, Text, View} from 'react-native';
 import {colors} from '../../components/constants/constants';
 import MembershipCard from '../../components/MembershipCard';
 import {styles} from './styles';
+import Button from '../../components/Button/index.js';
 
 const MembershipScreen = () => {
   return (
@@ -31,7 +28,7 @@ const MembershipScreen = () => {
             onPress={() => Alert.alert('Alert!', 'Annual Plan Selected!')}
           />
           <View style={{paddingHorizontal: 20, paddingVertical: 20}}>
-            <AppButton
+            <Button
               title={'CONTINUE'}
               style={{
                 height: 56,
