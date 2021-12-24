@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, FlatList, View} from 'react-native';
+import {Alert, FlatList, Text, View} from 'react-native';
 import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
@@ -8,61 +8,50 @@ import {colors, videos} from './app/components/constants/constants';
 
 const App = () => {
   return (
-    // <FlatList
-    //   data={videos}
-    //   keyExtractor={video => video.id}
-    //   renderItem={video => <AppVideoCard video={video} />}
-    // />
-    // <>
-    //   <AppIconButton icon={'google'} size={25} />
-    //   <AppIconButton icon={'google'} size={50} color={colors.secondary2} />
-    //   <AppIconButton
-    //     icon={'google'}
-    //     size={75}
-    //     backgroundColor={colors.secondary2}
-    //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
-    //   />
-    // </>
-    <View style={{padding: 30}}>
-      {/* <AppSocialButton icon={'google'} size={25} />
-      <AppSocialButton icon={'google'} size={50} color="black" />
-      <AppSocialButton title={'Sign Up With Google'} size={75} /> */}
-      <Button
-        title={'primary'}
-        buttonType="primary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'Primary Button Pressed!')}
+    <View
+      style={{
+        padding: 30,
+        flexDirection: 'column',
+        height: '100%',
+        alignItems: 'center',
+      }}>
+      <Text>defult</Text>
+      <AppSocialButton
+        // title={'Google'}
+        icon={'google'}
+        //primaryColor="dodgerblue"
       />
-      <Button
-        title={'primary-isOutlined'}
-        buttonType="primary"
-        isOutlined={true}
-        onPress={() =>
-          Alert.alert('Alert!', 'primary-outlined Button Pressed!')
-        }
+      <Text>primaryColor = dodgerblue</Text>
+      <AppSocialButton
+        title={'facebook'}
+        icon={'facebook'}
+        primaryColor="dodgerblue"
       />
-      <Button
-        title={'secondary-enabled'}
-        buttonType="secondary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'secondary Button Pressed!')}
-        disabled={false}
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <AppSocialButton title={'Google'} icon={'google'} size={70} />
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <AppSocialButton
+        title={'Google'}
+        icon={'google'}
+        iconColor="red"
+        primaryColor="dodgerblue"
+
+        //primaryColor="dodgerblue"
       />
-      <Button
-        title={'secondary-disabled'}
-        buttonType="secondary"
-        isOutlined={false}
-        onPress={() => Alert.alert('Alert!', 'secondary Button Pressed!')}
-        disabled={true}
-      />
-      <Button
-        title={'secondary-isOutlined'}
-        buttonType="secondary"
-        isOutlined={true}
-        onPress={() =>
-          Alert.alert('Alert!', 'secondary-Outlined Button Pressed!')
-        }
-        style={{width: '50%'}}
+      <Text>iconColor=red</Text>
+      <Text>primaryColor=dodgerblue</Text>
+      <Text>titleStyle=color:black</Text>
+      <Text>style = borderColor:orange</Text>
+      <AppSocialButton
+        title={'Google'}
+        icon={'google'}
+        iconColor="red"
+        primaryColor="dodgerblue"
+        titleStyle={{color: 'black'}}
+        style={{borderColor: 'orange'}}
+        //primaryColor="dodgerblue"
       />
     </View>
   );
