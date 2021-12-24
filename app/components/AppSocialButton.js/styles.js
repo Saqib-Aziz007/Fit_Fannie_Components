@@ -10,10 +10,14 @@ export const styles = StyleSheet.create({
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'row',
   },
   socialbuttontitle: {
     color: colors.secondary2,
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  icon: {
+    paddingHorizontal: 10,
   },
 });
