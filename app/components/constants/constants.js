@@ -46,3 +46,27 @@ export const videos = [
     },
   },
 ];
+
+export const Questions = [
+  {
+    id: 1,
+    question: 'What motivates you to be healthier?',
+    options: [
+      {value: 1, label: 'To feel better'},
+      {value: 2, label: 'To look better'},
+      {value: 3, label: 'To have a goal'},
+      {value: 4, label: 'To avoid illness'},
+    ],
+  },
+  {
+    id: 2,
+    question: 'What are your biggest hardles to exercising?',
+    options: [
+      {value: 1, label: 'No energy'},
+      {value: 2, label: 'No motivation'},
+      {value: 3, label: 'No time'},
+      {value: 4, label: 'No support network'},
+      {value: 5, label: 'To live longer'},
+    ],
+  },
+];
