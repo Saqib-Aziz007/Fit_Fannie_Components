@@ -4,7 +4,9 @@ import AppButton from './app/components/AppButton';
 import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
 import AppVideoCard from './app/components/AppVideoCard';
-import {colors, Questions, videos} from './app/components/constants/constants';
+import {colors, videos} from './app/components/constants/constants';
+import DividerContainer from './app/components/Divider';
+import Login1 from './app/screens/Login1';
 import AppCustomButton from './app/components/CustomButton';
 import QuestionCard from './app/components/QuestionCard';
 
@@ -46,6 +48,16 @@ const App = () => {
     //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
     //   />
     // </>
+    // <>
+    //   <AppSocialButton icon={'google'} size={25} />
+    //   <AppSocialButton icon={'google'} size={50} color="black" />
+    //   <AppSocialButton title={'Sign Up With Google'} size={75} />
+    // </>
+    <>
+      <DividerContainer text={'Join Us'} />
+      <DividerContainer text={'or'} />
+      <DividerContainer text={'Contact Us'} />
+    </>
 
     //   <AppSocialButton icon={'google'} size={25} />
     //   <AppSocialButton icon={'google'} size={50} color="black" />
