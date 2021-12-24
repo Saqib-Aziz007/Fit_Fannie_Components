@@ -1,38 +1,55 @@
-import React from 'react';
-import {Alert, FlatList} from 'react-native';
-import AppButton from './app/components/AppButton';
+import React, {useState} from 'react';
+import {Alert, FlatList, SafeAreaView, Text, View} from 'react-native';
 import AppIconButton from './app/components/AppIconButton';
 import AppSocialButton from './app/components/AppSocialButton.js';
-import AppVideoCard from './app/components/AppVideoCard';
-import {colors, videos} from './app/components/constants/constants';
-import AppCustomButton from './app/components/CustomButton';
+import AppVideoCard from './app/components/VideoCard';
+import Button from './app/components/Button';
+import {colors, images, videos} from './app/components/constants/constants';
+import AppSlider from './app/components/Slider';
+import ProfileScreen from './app/screens/ProfileScreen';
+import ProfileTextCard from './app/components/ProfileTextCard';
 
 const App = () => {
   return (
-    <AppCustomButton
-      onPress={value => console.warn('Button pressed!', value)}
-    />
-    // <>s
-    //  <FlatList
-    //   data={videos}
-    //   keyExtractor={video => video.id}
-    //   renderItem={video => <AppVideoCard video={video} />}
-    // />
-    // <>
-    //   <AppIconButton icon={'google'} size={25} />
-    //   <AppIconButton icon={'google'} size={50} color={colors.secondary2} />
-    //   <AppIconButton
-    //     icon={'google'}
-    //     size={75}
-    //     backgroundColor={colors.secondary2}
-    //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
-    //   />
-    // </>
-
-    //   <AppSocialButton icon={'google'} size={25} />
-    //   <AppSocialButton icon={'google'} size={50} color="black" />
-    //   <AppSocialButton icon={'google'} title={'Sign Up With Google'} size={75} />
-    // </>
+    <SafeAreaView>
+      <ProfileTextCard
+        name={'Name'}
+        value={'Muhammad Saqib'}
+        onPress={value =>
+          console.log('Alert! 1', `Change Button Pressed! ${value}`)
+        }
+      />
+      <ProfileTextCard
+        name={'Email'}
+        value={'saqib.aziz@pikessoft.com'}
+        onPress={value =>
+          console.log('Alert! 2', `Change Button Pressed! ${value}`)
+        }
+      />
+      <ProfileTextCard
+        name={'Password'}
+        value={'Change'}
+        onPress={value =>
+          console.log('Alert! 3', `Change Button Pressed! ${value}`)
+        }
+      />
+      <ProfileTextCard
+        name={'Profile Picture'}
+        profilePicture={require('./assets/images/image1.png')}
+        onPress={value =>
+          console.log('Alert! 4', `Change Button Pressed! ${value}`)
+        }
+      />
+      <ProfileTextCard
+        name={'Motivational Notifications'}
+        radio={true}
+        rightTextStyle={{width: '30%'}}
+        leftTextStyle={{width: '70%'}}
+        onPress={value =>
+          console.log('Alert! 5', `Change Button Pressed! ${value}`)
+        }
+      />
+    </SafeAreaView>
   );
 };
 
