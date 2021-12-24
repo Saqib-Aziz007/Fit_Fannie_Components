@@ -3,8 +3,8 @@ import {colors} from '../constants/constants';
 
 export const styles = StyleSheet.create({
   membershipCard: {
-    width: '100%',
-    height: '30%',
+    // width: '100%',
+    height: '35%',
     borderWidth: 2,
     borderColor: colors.APP_SECONDARY_COLOR,
     borderRadius: 15,

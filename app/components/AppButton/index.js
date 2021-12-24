@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
+import {colors} from '../constants/constants';
 import {styles} from './styles';
 
 const Button = ({
