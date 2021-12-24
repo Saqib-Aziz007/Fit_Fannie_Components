@@ -8,8 +8,8 @@ const AppIconButton = ({
   icon,
   onPress,
   size = 50,
-  color = colors.APP_COLOR_WHITE,
-  backgroundColor = colors.APP_COLOR_LIGHT3,
+  iconColor = colors.APP_COLOR_WHITE,
+  backgroundColor = colors.APP_SECONDARY_COLOR,
   style,
 }) => {
   return (
@@ -20,7 +20,7 @@ const AppIconButton = ({
           height: size,
           width: size,
           borderRadius: size / 2,
-          backgroundColor: color,
+          backgroundColor: backgroundColor,
           ...style,
         }}>
         <Icon name={icon} size={size / 2} color={iconColor} />

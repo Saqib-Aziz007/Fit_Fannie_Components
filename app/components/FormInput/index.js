@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 import {colors} from '../constants/constants';
 
-import ErrorMessage from '../ErrorMessage';
+import ErrorMessage from '../FormErrorMessage';
 import {styles} from './styles';
 
 const FormInput = ({label, ...otherProps}) => {

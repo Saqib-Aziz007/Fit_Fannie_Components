@@ -8,12 +8,12 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   divider: {
-    height: 3,
+    height: 2,
     width: '35%',
     backgroundColor: colors.APP_SECONDARY_COLOR,
   },
   dividertext: {
-    color: colors.primaryTextColor,
+    color: colors.APP_SECONDARY_COLOR,
     fontSize: 16,
     fontWeight: '400',
   },

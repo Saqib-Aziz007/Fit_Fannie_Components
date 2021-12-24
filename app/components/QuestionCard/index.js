@@ -4,12 +4,10 @@ import RadioForm from 'react-native-simple-radio-button';
 import {Questions} from '../constants/constants';
 import {styles} from './styles';
 
-const QuestionCard = ({
-  question = Questions[0],
-  totalQuestion = Questions.length,
-  onPress,
-}) => {
+const QuestionCard = ({question, totalQuestion, onPress}) => {
   // console.log('index:::::::', question?.options);
+  // console.log(question, 'bbbbbbbb');
+  question = question.item;
   return (
     <View style={styles.mainContainer}>
       <View style={styles.questionMainContainer}>

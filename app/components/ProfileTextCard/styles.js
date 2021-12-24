@@ -3,7 +3,7 @@ import {colors} from '../constants/constants';
 
 export const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: colors.primarylight1,
+    backgroundColor: colors.APP_COLOR_LIGHT1,
     height: 80,
     marginVertical: 5,
     paddingHorizontal: 20,
@@ -16,17 +16,17 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   leftText: {
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: '400',
     color: 'black',
     width: '35%',
     textAlign: 'left',
   },
   rightText: {
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: '400',
     width: '65%',
-    color: colors.secondary1,
+    color: colors.APP_SECONDARY_COLOR,
     textAlign: 'right',
     fontStyle: 'italic',
   },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 30,
-    borderColor: colors.primarydark3,
+    borderColor: colors.APP_COLOR_LIGHT3,
     borderWidth: 3,
   },
 });

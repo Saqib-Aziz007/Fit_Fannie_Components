@@ -9,7 +9,7 @@ const AppSlider = ({
   maximumValue = 100,
   thumbStyle = styles.trackThumbComponent,
   trackstyle = styles.trackstyle,
-  minimumTrackTintColor = colors.backbuttonColor,
+  minimumTrackTintColor = colors.APP_COLOR_LIGHT3,
   maximumTrackTintColor,
   onValueChange,
   renderValue,

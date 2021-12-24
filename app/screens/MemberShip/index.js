@@ -4,6 +4,7 @@ import {colors} from '../../components/constants/constants';
 import MembershipCard from '../../components/MembershipCard';
 import {styles} from './styles';
 import Button from '../../components/Button/index.js';
+import AppIconButton from '../../components/AppIconButton';
 
 const MembershipScreen = () => {
   return (
@@ -34,7 +35,6 @@ const MembershipScreen = () => {
                 height: 56,
                 marginBottom: 15,
               }}
-              on
             />
             <Text
               style={{fontSize: 14, fontWeight: '400', textAlign: 'center'}}>

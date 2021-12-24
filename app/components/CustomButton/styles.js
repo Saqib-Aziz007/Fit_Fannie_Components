@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   buttonContainer: {
-    backgroundColor: colors.secondary1,
+    backgroundColor: colors.APP_SECONDARY_COLOR,
     height: 40,
     width: 70,
     justifyContent: 'center',
@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    color: colors.white,
+    color: colors.APP_COLOR_WHITE,
     fontWeight: '500',
   },
   buttonconditionContainer2: {
-    backgroundColor: colors.primarydark2,
+    backgroundColor: colors.APP_COLOR_LIGHT2,
     height: 40,
     width: 70,
     justifyContent: 'center',
@@ -26,6 +26,6 @@ export const styles = StyleSheet.create({
   },
   textcondition2: {
     fontSize: 20,
-    color: colors.white,
+    color: colors.APP_COLOR_WHITE,
   },
 });

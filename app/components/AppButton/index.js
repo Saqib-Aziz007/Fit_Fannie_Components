@@ -1,25 +1,44 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
+import {colors} from '../constants/constants';
 import {styles} from './styles';
 
-const AppButton = ({
+const Button = ({
   title,
   isOutlined = false,
   onPress,
   disabled = false,
+  buttonType = 'secondary',
   style,
   titleStyle,
 }) => {
+  useEffect(() => {}, []);
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      activeOpacity={disabled ? 0.7 : 1}
-      disabled={disabled}>
+    <TouchableOpacity onPress={onPress} disabled={disabled}>
       <View
-        style={[isOutlined ? styles.OutlinedButton : styles.AppButton, style]}>
+        style={[
+          buttonType === 'primary' && isOutlined === true
+            ? styles.PrimayOutlinedButton
+            : buttonType === 'secondary' && isOutlined === true
+            ? styles.SecondaryOutlinedButton
+            : buttonType === 'primary' && isOutlined === false
+            ? disabled
+              ? {...styles.PrimaryAppButton, opacity: 0.3}
+              : styles.PrimaryAppButton
+            : disabled
+            ? {...styles.SecondaryAppButton, opacity: 0.7}
+            : styles.SecondaryAppButton,
+          style,
+        ]}>
         <Text
           style={[
-            isOutlined ? styles.OutlinedButtonTitle : styles.AppButtonTitle,
+            buttonType === 'primary' && isOutlined === true
+              ? styles.PrimayOutlinedButtonTitle
+              : buttonType === 'secondary' && isOutlined === true
+              ? styles.SecondaryOutlinedButtonTitle
+              : buttonType === 'primary' && isOutlined === false
+              ? styles.PrimaryAppButtonTitle
+              : styles.SecondaryAppButtonTitle,
             titleStyle,
           ]}>
           {title}
@@ -29,4 +48,4 @@ const AppButton = ({
   );
 };
 
-export default AppButton;
+export default Button;

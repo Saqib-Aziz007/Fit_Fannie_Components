@@ -4,7 +4,7 @@ import {colors} from '../constants/constants';
 export const styles = StyleSheet.create({
   containerStyle: {},
   trackstyle: {
-    backgroundColor: colors.backbuttonColor,
+    backgroundColor: colors.APP_COLOR_LIGHT3,
     height: 10,
     borderRadius: 5,
   },
@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     borderRadius: 17.5,
     backgroundColor: 'transparent',
     borderWidth: 5,
-    borderColor: colors.secondary2,
+    borderColor: colors.APP_PRIMARY_COLOR,
   },
   textContainer: {alignItems: 'center', justifyContent: 'center'},
   thumbText: {
@@ -22,6 +22,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     fontWeight: '400',
     fontSize: 24,
-    color: 'black',
+    color: colors.APP_COLOR_BLACK,
   },
 });

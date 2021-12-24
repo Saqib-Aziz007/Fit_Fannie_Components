@@ -42,11 +42,11 @@ const ProfileTextCard = ({
             <Switch
               onValueChange={value => setSwitchValue(value)}
               trackColor={{
-                false: colors.primarydark3,
-                true: colors.primarydark3,
+                false: colors.APP_COLOR_LIGHT3,
+                true: colors.APP_COLOR_LIGHT3,
               }}
-              ios_backgroundColor={colors.primarydark3}
-              thumbColor={colors.secondary1}
+              ios_backgroundColor={colors.APP_COLOR_LIGHT3}
+              thumbColor={colors.APP_SECONDARY_COLOR}
               value={switchValue}
             />
           ) : null}
