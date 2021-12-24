@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './app/navigation/TabNavigator';
 import MembershipScreen from './app/screens/MemberShip';
 import SignUp from './app/screens/Sign_Up';
+import DoneScreen from './app/screens/DoneScreen';
 
 const App = () => {
   return (
@@ -41,9 +42,10 @@ const App = () => {
     //   <DividerContainer text={'or'} />
     // <DividerContainer text={'Contact Us'} />
     // </>
-    <NavigationContainer>
-      <TabNavigator />
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <TabNavigator />
+    // </NavigationContainer>
+    <DoneScreen />
   );
 };
 
