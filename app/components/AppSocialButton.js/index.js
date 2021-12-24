@@ -22,14 +22,26 @@ const AppSocialButton = ({
             borderRadius: size / 2,
             height: size,
             width: size * 3,
+            borderColor: primaryColor,
           },
           style,
         ]}>
         {icon && (
-          <Icon name={icon} size={size / 2} color={color} style={iconStyle} />
+          <Icon
+            name={icon}
+            size={size / 2}
+            color={iconColor ? iconColor : primaryColor}
+            style={[styles.icon, iconStyle]}
+          />
         )}
         {title && (
-          <Text style={[styles.socialbuttontitle, titleStyle]}>{title}</Text>
+          <Text
+            style={[
+              {...styles.socialbuttontitle, color: primaryColor},
+              titleStyle,
+            ]}>
+            {title}
+          </Text>
         )}
       </View>
     </TouchableOpacity>

@@ -1,12 +1,4 @@
 import React from 'react';
-import {Alert, FlatList} from 'react-native';
-import AppButton from './app/components/AppButton';
-import AppIconButton from './app/components/AppIconButton';
-import AppSocialButton from './app/components/AppSocialButton.js';
-import AppVideoCard from './app/components/AppVideoCard';
-import {colors, videos} from './app/components/constants/constants';
-import DividerContainer from './app/components/Divider';
-import Login1 from './app/screens/Login1';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './app/navigation/TabNavigator';
 
