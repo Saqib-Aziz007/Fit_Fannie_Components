@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {colors} from '../constants/constants';
 
 export const styles = StyleSheet.create({
   mainContainer: {
@@ -14,7 +15,7 @@ export const styles = StyleSheet.create({
     borderRadius: 15,
     height: 100,
     width: 100,
-    backgroundColor: 'white',
+    backgroundColor: colors.APP_COLOR_WHITE,
     justifyContent: 'center',
   },
   image: {
@@ -30,17 +31,17 @@ export const styles = StyleSheet.create({
   heading: {
     fontWeight: '300',
     fontSize: 16,
-    color: 'black',
+    color: colors.APP_COLOR_BLACK,
   },
   title: {
     fontWeight: '700',
     fontSize: 20,
-    color: 'black',
+    color: colors.APP_COLOR_BLACK,
   },
   subTitle: {
     fontWeight: '400',
     fontSize: 16,
-    color: 'black',
+    color: colors.APP_COLOR_BLACK,
   },
   lock: {},
 });

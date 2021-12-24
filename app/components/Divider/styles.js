@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   divider: {
     height: 3,
     width: '35%',
-    backgroundColor: colors.secondary1,
+    backgroundColor: colors.APP_SECONDARY_COLOR,
   },
   dividertext: {
     color: colors.primaryTextColor,

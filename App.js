@@ -1,68 +1,44 @@
 import React from 'react';
-import {Alert, FlatList, View} from 'react-native';
-import AppButton from './app/components/AppButton';
-import AppIconButton from './app/components/AppIconButton';
-import AppSocialButton from './app/components/AppSocialButton.js';
-import AppVideoCard from './app/components/AppVideoCard';
-import {colors, videos} from './app/components/constants/constants';
-import DividerContainer from './app/components/Divider';
-import Login1 from './app/screens/Login1';
-import AppCustomButton from './app/components/CustomButton';
-import QuestionCard from './app/components/QuestionCard';
+import {NavigationContainer} from '@react-navigation/native';
+import TabNavigator from './app/navigation/TabNavigator';
 
 const App = () => {
   return (
-    // <View style={{height: '70%', width: '98%'}}>
-    <FlatList
-      data={Questions}
-      keyExtractor={value => value.id}
-      horizontal={true}
-      // style={{width: '100%', height: '60%'}}
-      renderItem={question => (
-        // console.log(question),
-        <QuestionCard
-          question={question.item}
-          totalQuestion={Questions.length}
-          onPress={value => console.warn('Alert!', value)}
-        />
-      )}
-    />
-    // </View>
-    // <QuestionCard />
-    // <AppCustomButton
-    //   onPress={value => console.warn('Button pressed!', value)}
-    // />
-    // <>s
-    //  <FlatList
-    //   data={videos}
-    //   keyExtractor={video => video.id}
-    //   renderItem={video => <AppVideoCard video={video} />}
-    // />
     // <>
+    //   <FlatList
+    //     data={videos}
+    //     keyExtractor={video => video.id}
+    //     renderItem={video => <AppVideoCard video={video} />}
+    //   />
+    //   <AppButton title={'SIGN UP'} />
     //   <AppIconButton icon={'google'} size={25} />
-    //   <AppIconButton icon={'google'} size={50} color={colors.secondary2} />
+    //   <AppIconButton
+    //     icon={'google'}
+    //     size={50}
+    //     color={colors.APP_PRIMARY_COLOR}
+    //   />
     //   <AppIconButton
     //     icon={'google'}
     //     size={75}
-    //     backgroundColor={colors.secondary2}
+    //     backgroundColor={colors.APP_PRIMARY_COLOR}
     //     onPress={() => Alert.alert('Alert!', 'BackButton Pressed!')}
     //   />
-    // </>
-    // <>
-    //   <AppSocialButton icon={'google'} size={25} />
-    //   <AppSocialButton icon={'google'} size={50} color="black" />
-    //   <AppSocialButton title={'Sign Up With Google'} size={75} />
-    // </>
-    <>
-      <DividerContainer text={'Join Us'} />
-      <DividerContainer text={'or'} />
-      <DividerContainer text={'Contact Us'} />
-    </>
 
     //   <AppSocialButton icon={'google'} size={25} />
-    //   <AppSocialButton icon={'google'} size={50} color="black" />
-    //   <AppSocialButton icon={'google'} title={'Sign Up With Google'} size={75} />
+    //   <AppSocialButton
+    //     icon={'google'}
+    //     size={50}
+    //     color={colors.APP_COLOR_BLACK}
+    //   />
+    //   <AppSocialButton title={'Sign Up With Google'} size={75} />
+
+    //   <DividerContainer text={'Join Us'} />
+    //   <DividerContainer text={'or'} />
+    // <DividerContainer text={'Contact Us'} />
     // </>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
   );
 };
 

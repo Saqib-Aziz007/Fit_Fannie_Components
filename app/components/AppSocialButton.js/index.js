@@ -11,8 +11,7 @@ const AppSocialButton = ({
   iconStyle,
   titleStyle,
   size = 50,
-  primaryColor = colors.secondary2,
-  iconColor = primaryColor,
+  color = colors.APP_PRIMARY_COLOR,
 }) => {
   return (
     <TouchableOpacity onPress={onPress}>

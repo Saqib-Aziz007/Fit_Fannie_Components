@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   socialbutton: {
     height: 50,
     width: 150,
-    borderColor: colors.secondary2,
+    borderColor: colors.APP_PRIMARY_COLOR,
     borderWidth: 3,
     borderRadius: 25,
     justifyContent: 'center',
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   socialbuttontitle: {
-    color: colors.secondary2,
+    color: colors.APP_PRIMARY_COLOR,
     fontSize: 20,
     fontWeight: 'bold',
   },
