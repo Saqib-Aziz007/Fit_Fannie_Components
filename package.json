@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-navigation/material-bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.6",
+    "@miblanchard/react-native-slider": "^2.1.0",
     "lottie-ios": "3.2.3",
     "lottie-react-native": "^5.0.1",
     "react": "17.0.2",
@@ -20,8 +21,10 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "react-native-svg": "^12.1.1",
-    "react-native-vector-icons": "^9.0.0",
     "victory-native": "^36.2.0"
+    "react-native-simple-radio-button": "^2.7.4",
+    "react-native-slider": "^0.11.0",
+    "react-native-vector-icons": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -29,7 +32,7 @@
     "@react-native-community/eslint-config": "^3.0.1",
     "babel-jest": "^27.4.4",
     "eslint": "^8.4.1",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2"
   },
