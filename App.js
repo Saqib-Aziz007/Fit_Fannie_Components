@@ -2,11 +2,13 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './app/navigation/TabNavigator';
 import MembershipScreen from './app/screens/MemberShip';
+import SignUp from './app/screens/Sign_Up';
 
 const App = () => {
   return (
-    <MembershipScreen />
-
+    // <MembershipScreen />
+    // <Login1 />
+    // <SignUp />
     // <>
     //   <FlatList
     //     data={videos}
@@ -39,9 +41,9 @@ const App = () => {
     //   <DividerContainer text={'or'} />
     // <DividerContainer text={'Contact Us'} />
     // </>
-    // <NavigationContainer>
-    //   <TabNavigator />
-    // </NavigationContainer>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
   );
 };
 

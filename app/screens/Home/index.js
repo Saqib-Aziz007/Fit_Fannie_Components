@@ -18,42 +18,42 @@ const data = [
 
 const Home = () => {
   return (
-    <SafeAreaView style={styles.scrollView}>
-      <ScrollView style={styles.scrollView}>
-        <View style={styles.container}>
-          <View style={styles.prpfileContainer}>
-            <Image
-              source={images.login1background}
-              style={styles.profileImageContainer}
-            />
-            <Text style={styles.profileName}>Sarah</Text>
-          </View>
-          <View>
-            <LineGraph data={data} showAxis={false} />
-          </View>
-          <View style={styles.excerciseContainer}>
-            <Text style={styles.excerciselabel}>Exerciese Time</Text>
-            <Text style={styles.excerciseDateStyle}>
-              {'Mon, Wed | 10-10:30 AM'}
-            </Text>
-          </View>
+    // <SafeAreaView style={styles.scrollView}>
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.container}>
+        <View style={styles.prpfileContainer}>
+          <Image
+            source={images.login1background}
+            style={styles.profileImageContainer}
+          />
+          <Text style={styles.profileName}>Sarah</Text>
         </View>
-        <View
-          style={{
-            backgroundColor: colors.APP_COLOR_BLACK,
-            height: 1,
-            width: '100%',
-          }}></View>
-        <View
-          style={{
-            ...styles.excerciseContainer,
-            paddingHorizontal: 25,
-          }}>
-          <Text style={styles.excerciselabel}>Goal</Text>
-          <Text style={styles.excerciseDateStyle}>{'Legs, Belly'}</Text>
+        <View>
+          <LineGraph data={data} showAxis={false} />
         </View>
-      </ScrollView>
-    </SafeAreaView>
+        <View style={styles.excerciseContainer}>
+          <Text style={styles.excerciselabel}>Exerciese Time</Text>
+          <Text style={styles.excerciseDateStyle}>
+            {'Mon, Wed | 10-10:30 AM'}
+          </Text>
+        </View>
+      </View>
+      <View
+        style={{
+          backgroundColor: colors.APP_COLOR_BLACK,
+          height: 1,
+          width: '100%',
+        }}></View>
+      <View
+        style={{
+          ...styles.excerciseContainer,
+          paddingHorizontal: 25,
+        }}>
+        <Text style={styles.excerciselabel}>Goal</Text>
+        <Text style={styles.excerciseDateStyle}>{'Legs, Belly'}</Text>
+      </View>
+    </ScrollView>
+    // </SafeAreaView>
   );
 };
 

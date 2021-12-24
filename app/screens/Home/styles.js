@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     borderColor: colors.APP_COLOR_LIGHT3,
   },
   profileName: {
-    color: colors.PRIMARY_COLOR,
+    color: colors.APP_PRIMARY_COLOR,
     fontSize: 24,
     fontWeight: '700',
     textAlign: 'center',
