@@ -153,9 +153,9 @@ const App = () => {
     // <DividerContainer text={'Contact Us'} />
     // </>
 
-    // <NavigationContainer>
-    //   <TabNavigator />
-    // </NavigationContainer>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
 
     // <DoneScreen />
 
@@ -165,7 +165,7 @@ const App = () => {
 
     // <MembershipScreen />
 
-    <SignUp />
+    // <SignUp />
   );
 };
 
