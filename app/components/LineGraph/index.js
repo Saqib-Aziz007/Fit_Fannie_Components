@@ -7,10 +7,6 @@ import {VictoryChart, VictoryLine, VictoryTheme} from 'victory-native';
 
 const {width, height} = Dimensions.get('screen');
 
-const DataRange = {
-  date: 'Progress November 11-17',
-};
-
 const LineGraph = ({
   data = data,
   style,

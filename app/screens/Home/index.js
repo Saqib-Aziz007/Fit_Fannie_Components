@@ -29,7 +29,7 @@ const Home = () => {
           <Text style={styles.profileName}>Sarah</Text>
         </View>
         <View>
-          <LineGraph data={data} showAxis={false} />
+          <LineGraph data={data} />
         </View>
         <View style={styles.excerciseContainer}>
           <Text style={styles.excerciselabel}>Exerciese Time</Text>

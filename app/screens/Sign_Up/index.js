@@ -32,6 +32,7 @@ const SignUp = () => {
             icon={'chevron-left'}
             size={32}
             style={{position: 'absolute', left: 20, top: -10}}
+            onPress={() => Alert.alert('Back Button Pressed!')}
           />
           <View>
             <View style={styles.logo}>
