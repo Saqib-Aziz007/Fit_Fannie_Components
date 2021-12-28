@@ -1,31 +1,32 @@
 import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './app/navigation/TabNavigator';
-import MembershipScreen from './app/screens/MemberShip';
-import SignUp from './app/screens/Sign_Up';
-import DoneScreen from './app/screens/DoneScreen';
-import AppButton from './app/components/AppButton';
-import {Alert, FlatList, SafeAreaView, Text} from 'react-native';
-import AppIconButton from './app/components/AppIconButton';
-import AppSocialButton from './app/components/AppSocialButton.js';
-import {
-  colors,
-  images,
-  Questions,
-  videos,
-} from './app/components/constants/constants';
-import AppText from './app/components/AppText/index.js';
-import AppVideoCard from './app/components/AppVideoCard';
-import AppCustomButton from './app/components/CustomButton';
-import Divider from './app/components/Divider';
-import ErrorMessage from './app/components/FormErrorMessage';
-import MembershipCard from './app/components/MembershipCard';
-import ProfileTextCard from './app/components/ProfileTextCard';
-import QuestionCard from './app/components/QuestionCard';
-import AppSlider from './app/components/Slider';
-import Home from './app/screens/Home';
-import Login1 from './app/screens/Login1';
-import Profile from './app/screens/Profile';
+import HealthDisclaimer from './app/screens/HealthDisclaimer';
+// import MembershipScreen from './app/screens/MemberShip';
+// import SignUp from './app/screens/Sign_Up';
+// import DoneScreen from './app/screens/DoneScreen';
+// import AppButton from './app/components/AppButton';
+// import {Alert, FlatList, SafeAreaView, Text} from 'react-native';
+// import AppIconButton from './app/components/AppIconButton';
+// import AppSocialButton from './app/components/AppSocialButton.js';
+// import {
+//   colors,
+//   images,
+//   Questions,
+//   videos,
+// } from './app/components/constants/constants';
+// import AppText from './app/components/AppText/index.js';
+// import AppVideoCard from './app/components/AppVideoCard';
+// import AppCustomButton from './app/components/CustomButton';
+// import Divider from './app/components/Divider';
+// import ErrorMessage from './app/components/FormErrorMessage';
+// import MembershipCard from './app/components/MembershipCard';
+// import ProfileTextCard from './app/components/ProfileTextCard';
+// import QuestionCard from './app/components/QuestionCard';
+// import AppSlider from './app/components/Slider';
+// import Home from './app/screens/Home';
+// import Login1 from './app/screens/Login1';
+// import Profile from './app/screens/Profile';
 
 const App = () => {
   const [value, setValue] = useState();
@@ -153,9 +154,11 @@ const App = () => {
     // <DividerContainer text={'Contact Us'} />
     // </>
 
-    <NavigationContainer>
-      <TabNavigator />
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <TabNavigator />
+    // </NavigationContainer>
+
+    <HealthDisclaimer />
 
     // <DoneScreen />
 
